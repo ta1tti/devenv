@@ -19,12 +19,12 @@ RUN apt install -y locales && \
 RUN git clone https://github.com/ta1tti/dotfiles.git dotfiles
 
 RUN rm ~/.bashrc && \
-    rm -rf ~/.config/nvim && \
+		rm -rf ~/.config/nvim && \
 		mkdir -p ~/.config/nvim && \
 		ln -s /dotfiles/.bashrc ~/.bashrc && \
 		ln -s /dotfiles/.bash_aliases ~/.bash_aliases && \
-    ln -s /dotfiles/.config/nvim/* ~/.config/nvim && \
-    ln -sf /dotfiles/.bash_boot_scripts ~/.bash_boot_scripts && \
+		ln -s /dotfiles/.config/nvim/* ~/.config/nvim && \
+		ln -sf /dotfiles/.bash_boot_scripts ~/.bash_boot_scripts && \
 		ln -sf /dotfiles/.tmux.conf ~/.tmux.conf
 
 RUN nvim +:q
