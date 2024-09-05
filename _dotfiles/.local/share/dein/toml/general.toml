@@ -1,0 +1,45 @@
+[[plugins]]
+repo = 'akinsho/toggleterm.nvim'
+rev = 'v2.11.0'
+hook_add = 'source ~/.local/share/dein/plugins/toggleterm.lua'
+
+[[plugins]]
+repo = 'EdenEast/nightfox.nvim'
+rev = 'v3.9.3'
+hook_add = 'source ~/.local/share/dein/plugins/nightfox.lua'
+
+[[plugins]]
+repo = 'github/copilot.vim'
+rev = 'v1.37.0'
+hook_add = 'source ~/.local/share/dein/plugins/copilot.vim'
+
+[[plugins]]
+repo = 'lewis6991/gitsigns.nvim'
+hook_add = 'source ~/.local/share/dein/plugins/gitsigns.lua'
+
+[[plugins]]
+repo = 'mhinz/vim-startify'
+hook_add = 'source ~/.local/share/dein/plugins/startify.vim'
+
+[[plugins]]
+repo = 'nanozuki/tabby.nvim'
+rev = 'v2.5.1'
+hook_add = 'source ~/.local/share/dein/plugins/tabby.lua'
+
+[[plugins]]
+repo = 'neovim/nvim-lspconfig'
+rev = 'v0.1.8'
+hook_add = 'source ~/.local/share/dein/plugins/lspconfig.lua'
+
+[[plugins]]
+repo = 'nvim-lualine/lualine.nvim'
+hook_add = 'source ~/.local/share/dein/plugins/lualine.lua'
+depends = ['nvim-web-devicons']
+
+[[plugins]]
+repo = 'ojroques/nvim-osc52'
+hook_add = 'source ~/.local/share/dein/plugins/osc52.lua'
+
+[[plugins]]
+repo = 'vim-denops/denops.vim'
+rev = 'v6.0.11'
