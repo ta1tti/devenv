@@ -16,15 +16,15 @@ RUN wget https://github.com/neovim/neovim/releases/download/v0.10.0/nvim-linux64
 RUN apt install -y locales && \
     locale-gen ja_JP.UTF-8
 
-RUN git clone https://github.com/ta1tti/dotfiles.git dotfiles
+RUN git clone https://github.com/ta1tti/devenv.git devenv
 
 RUN rm ~/.bashrc && \
     rm -rf ~/.config/nvim && \
     mkdir -p ~/.config/nvim && \
-    ln -s /dotfiles/.bashrc ~/.bashrc && \
-    ln -s /dotfiles/.bash_aliases ~/.bash_aliases && \
-    ln -s /dotfiles/.config/nvim/* ~/.config/nvim && \
-    ln -sf /dotfiles/.bash_boot_scripts ~/.bash_boot_scripts && \
-    ln -sf /dotfiles/.tmux.conf ~/.tmux.conf
+    ln -s /devenv/dotfiles/.bashrc ~/.bashrc && \
+    ln -s /devenv/dotfiles/.bash_aliases ~/.bash_aliases && \
+    ln -s /devenv/dotfiles/.config/nvim/* ~/.config/nvim && \
+    ln -sf /devenv/dotfiles/.bash_boot_scripts ~/.bash_boot_scripts && \
+    ln -sf /devenv/dotfiles/.tmux.conf ~/.tmux.conf
 
 RUN nvim +:q
