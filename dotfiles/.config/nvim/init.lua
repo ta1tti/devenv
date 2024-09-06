@@ -5,7 +5,9 @@ end
 
 -- vim.opt.clipboard:append({"unnamedplus"})
 vim.api.nvim_set_option("clipboard", "unnamed")
-
+vim.o.statusline = ""
+vim.o.laststatus = 0
+vim.o.cmdheight = 0
 
 load('user.settings')
 load('user.commands')
