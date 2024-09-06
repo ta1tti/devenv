@@ -1,0 +1,21 @@
+[Desktop Entry]
+FullScreen=false
+
+[General]
+LockSidebar=true
+ShowSidebar=true
+
+[MainWindow]
+1920x1200 screen: XPosition=2
+1920x1200 screen: YPosition=34
+State=AAAA/wAAAAD9AAAAAQAAAAAAAADIAAACfvwCAAAAAfsAAAAcAG8AawB1AGwAYQByAF8AcwBpAGQAZQBiAGEAcgEAAABSAAACfgAAARMBAAACAAADtwAAAn4AAAAEAAAABAAAAAgAAAAI/AAAAAMAAAABAAAAAQAAACwAcQB1AGkAYwBrAEEAbgBuAG8AdABhAHQAaQBvAG4AVABvAG8AbABCAGEAcgIAAAAA/////wAAAAAAAAAAAAAAAgAAAAEAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgEAAAAA/////wAAAAAAAAAAAAAAAgAAAAEAAAAiAGEAbgBuAG8AdABhAHQAaQBvAG4AVABvAG8AbABCAGEAcgAAAAAA/////wAAAAAAAAAA
+ToolBarsMovable=Disabled
+eDP-1=eDP-1
+
+[Recent Files]
+File1[$e]=$HOME/Desktop/qterminal.desktop
+File2[$e]=$HOME/Desktop/vim_cheat_sheet.txt
+File3[$e]=$HOME/Desktop/test.txt
+Name1[$e]=qterminal.desktop
+Name2[$e]=vim_cheat_sheet.txt
+Name3[$e]=test.txt
