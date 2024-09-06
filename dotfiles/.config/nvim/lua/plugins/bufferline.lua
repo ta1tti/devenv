@@ -6,10 +6,16 @@ Plugin.opts = {
   options = {
     mode = 'buffers',
     offsets = {
-      {filetype = 'neo-tree'},
+      {
+				filetype = 'neo-tree',
+		  --  text = "File Explorer",
+    	--	highlight = "Directory",
+    	--	text_align = "left"
+			},
     },
-  },
-  -- :help bufferline-highlights
+	},
+
+ -- -- :help bufferline-highlights
   highlights = {
     buffer_selected = {
       italic = false
@@ -18,7 +24,14 @@ Plugin.opts = {
       fg = {attribute = 'fg', highlight = 'Function'},
       italic = false
     }
-  }
+  },
+}
+
+Plugin.keys = {
+	-- タブの選択
+	{"<leader>bb", "<cmd>BufferLinePick<cr>"},
+	-- タブの選択削除
+	{"<leader>bc", "<cmd>BufferLinePickClose<cr>"},
 }
 
 return Plugin

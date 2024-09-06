@@ -16,10 +16,13 @@ function Plugin.init()
 end
 
 function Plugin.config()
-  vim.keymap.set('n', '<leader>e', '<cmd>Neotree filesystem toggle<cr>', {desc = 'Toggle file explorer'})
-
   require('neo-tree').setup({})
 end
 
-return Plugin
+Plugin.keys = {
+	{"<leader>e", "<cmd>Neotree filesystem toggle action=show<cr>"},
+}
 
+
+
+return Plugin
